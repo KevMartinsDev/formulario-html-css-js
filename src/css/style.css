@@ -1,0 +1,138 @@
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../imagem/bg-repeat.jpg);
+    background-size: contain;
+}
+
+.conteiner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conteiner .conteudo .titulo {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+}
+
+.conteiner .conteudo .texto {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+
+}
+
+.conteiner .bloco-formulario {
+    height: 378px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.conteiner .bloco-formulario .formulario .campos {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner .bloco-formulario .formulario .campos .bordas {
+    width: 300px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.conteiner .bloco-formulario .formulario .campos .campos-menores {
+    height: 35px;
+    margin-top: 7px;
+}
+
+.conteiner .bloco-formulario .formulario .campos .campos-maior {
+    height: 100px;
+    margin-top: 7px;
+}
+
+.conteiner .bloco-formulario .formulario .campos .campos-menores::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #A8A8A8;
+}
+
+.conteiner .bloco-formulario .formulario .campos .campos-maior::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #A8A8A8;
+}
+
+.conteiner .bloco-formulario .formulario .campos input {
+    padding: 10px;
+    width: 100px;
+}
+
+.conteiner .bloco-formulario .formulario .campos textarea {
+    resize: none;
+    padding: 10px;
+    width: 100px;
+}
+
+.conteiner .bloco-formulario .formulario .nota-de-atecao {
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 7px;
+}
+
+.conteiner .bloco-formulario .formulario .mensagem-atencao {
+    font-size: 0.8rem;
+    position: relative;
+    align-self: self-start;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.conteiner .bloco-formulario .formulario .mensagem-atencao.visivel {
+    opacity: 1;
+}
+
+.conteiner .bloco-formulario .formulario .atencao {
+    color: #F52E2E;
+}
+
+.conteiner .bloco-formulario .formulario .validado.bordas {
+    border: 2px solid #00C22B;
+}
+
+.conteiner .bloco-formulario .formulario .invalido.bordas {
+    border: 2px solid #F52E2E;
+}
+
+.conteiner .bloco-formulario .formulario .botao {
+    padding-top: 11px;
+}
+
+.conteiner .bloco-formulario .formulario .botao button {
+    width: 300px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #3CCC87;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="conteudo">
+            <h1 class="titulo">FICOU COM DÚVIDA?<br>NOS MANDE UMA MENSAGEM!</h1>
+            <p class="texto">caso tenha ficado com qualquer dúvida<br> basta nos andar uma mensagem e<br> entratemos em
+                contato em menos de 24h</p>
+        </div>
+        <div class="bloco-formulario">
+            <form id="formulario" class="formulario" action="index.html" method="post" onsubmit="return validarFormulario()">
+                <div class="campos">
+                    <input class="bordas campos-menores" type="text" id="nome" placeholder="Nome completo*" required>
+                    <span id="mensagem-nome" class="mensagem-atencao">campo obrigatório</span>
+
+                    <input class="bordas campos-menores" type="email" id="email" placeholder="Email*" required>
+                    <span id="mensagem-email" class="mensagem-atencao">campo obrigatório</span>
+
+                    <input class="bordas campos-menores" type="tel" id="telefone" placeholder="Telefone*" pattern="[0-9]{10,11}" required>
+                    <span id="mensagem-telefone" class="mensagem-atencao">campo obrigatório</span>
+
+                    <textarea class="bordas campos-maior" id="mensagem" placeholder="Mensagem*" required cols="30"
+                        rows="10"></textarea>
+                    <span id="mensagem-texto" class="mensagem-atencao cartao">campo obrigatório</span>
+                </div>
+                <div class="nota-de-atecao">
+                    <span>*campos obrigatórios</span>
+                </div>
+                <div class="botao">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+        <script src="src/js/script.js"></script>
+</body>
+
+</html>
